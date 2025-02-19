@@ -201,4 +201,15 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+// preloader js
+
+   const preloader = document.querySelector('#preloader');
+   if (preloader) {
+     window.addEventListener('load', () => {
+       preloader.remove();
+     });
+   }
+ 
+
+
 })();

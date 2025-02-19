@@ -751,6 +751,7 @@ color-mix(in srgb, var(--default-color), transparent 90%); */
   line-height: clamp(30px, 5vw, 45px);
   font-weight: 700;
   color: var(--accent-color);
+  text-transform: uppercase;
 }
 
 .page-title nav {
@@ -1155,6 +1156,7 @@ section,
 
 .services .service-item h3 {
   font-size: 24px;
+  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -1278,7 +1280,7 @@ section,
 .services .service-item:hover h3,
 .services .service-item:hover p,
 .services .service-item:hover .read-more {
-  color: #fff;
+  color: var(--accent-color);
 }
 
 .services .service-item:hover .icon {
@@ -2928,6 +2930,55 @@ cursor: pointer;
     font-size: 20px;
 }
 /* ebds */
+
+
+/* service page css */
+
+#service_page .read-more , #about_page .read-more{ 
+  display: none;
+}
+
+ #service_page .service-item:hover h3 , #service_page .service-item:hover p  {
+  color: var(--accent-color) !important;
+}
+
+.services .service-item:hover{
+  transform: scale(1.1);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn-get-started {
+  color: var(--contrast-color);
+  background: var(--red-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+  border-radius: 10px 10px 10px 0px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+
+  &&:hover {
+    background-color: var(--default-color);
+    color: var(--background-color);
+    transition: 0.5s;
+  }
+}
+
+ .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+.btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+/* ends service css */
 /*--------------------------------------------------------------
 # farhan css for shiled website   ends
 --------------------------------------------------------------*/

@@ -161,10 +161,13 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
+  font-size: clamp(15px, 5vw, 30px);
+
+
 }
 
 .header .btn-getstarted,
@@ -597,7 +600,8 @@ h6 {
   padding-top: 50px;
 }
 
-.footer .social-links a , .social-links a  {
+.footer .social-links a,
+.social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,7 +616,8 @@ h6 {
   transition: 0.3s;
 }
 
-.footer .social-links a:hover  , .social-links a:hover {
+.footer .social-links a:hover,
+.social-links a:hover {
   color: var(--accent-color);
   background-color: var(--white-color);
 }
@@ -825,7 +830,10 @@ section,
 .section-title h2 {
   /* color: var(--heading-color); */
   margin: 10px 0 0 0;
-  font-size: 32px;
+  font-size: clamp(25px, 5vw, 32px);
+  line-height: clamp(30px, 5vw, 40px);
+
+
   font-weight: 700;
   /* font-family: var(--default-color); */
   font-family: var(--heading-font);
@@ -975,7 +983,7 @@ section,
   line-height: 24px;
 }
 
-.about .content .btn-read-more {
+.about .content .btn-read-more , .more_service .btn-read-more  {
   color: var(--contrast-color);
   background: var(--accent-color);
   line-height: 0;
@@ -985,20 +993,20 @@ section,
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
 }
 
-.about .content .btn-read-more span {
+.about .content .btn-read-more span , .more_service .btn-read-more  span{
   font-family: var(--default-font);
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.about .content .btn-read-more i {
+.about .content .btn-read-more i , .more_service .btn-read-more  i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.about .content .btn-read-more:hover i {
+.about .content .btn-read-more:hover i , .more_service .btn-read-more:hover i  {
   transform: translateX(5px);
 }
 
@@ -1640,7 +1648,7 @@ section,
   position: relative;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+/* .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
@@ -1649,7 +1657,7 @@ section,
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
-}
+} */
 
 .testimonials .swiper-slide {
   opacity: 0.3;
@@ -1775,7 +1783,8 @@ section,
 --------------------------------------------------------------*/
 .clients .swiper-slide img {
   transition: 0.3s;
-  opacity: 0.5;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .clients .swiper-slide img:hover {
@@ -1787,12 +1796,17 @@ section,
 }
 
 .clients .swiper-pagination,
-#Service .swiper-pagination , #Hi_imp .swiper-pagination {
+#Service .swiper-pagination,
+#Hi_imp .swiper-pagination,
+#Waterproofing_Services .swiper-pagination,
+#AC_Repair_Services .swiper-pagination , 
+#Annual_Maintenance .swiper-pagination , 
+#AC_Deep_Cleaning .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet {
+/* .clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   opacity: 1;
@@ -1801,7 +1815,7 @@ section,
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
-}
+} */
 
 /*--------------------------------------------------------------
 # Recent Posts Section
@@ -1910,7 +1924,7 @@ section,
   background: color-mix(in srgb, var(--default-color), transparent 96%);
   padding: 30px;
   height: 100%;
-  
+
 }
 
 .contact .php-email-form input[type=text],
@@ -1920,9 +1934,9 @@ section,
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 10px;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  /* background-color: color-mix(in srgb, var(--background-color), transparent 50%); */
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1935,11 +1949,11 @@ section,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color:var(--default-color);
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--accent-color);
+  background: var(--red-color);
   color: var(--contrast-color);
   border: 0;
   padding: 10px 30px;
@@ -1948,7 +1962,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: var(--default-color);
 }
 
 /*--------------------------------------------------------------
@@ -2914,8 +2928,8 @@ svg:hover {
 #contact_page .values .card {
   overflow: hidden;
   transition: 0.3s;
-height: auto; 
-cursor: pointer;
+  height: auto;
+  cursor: pointer;
 }
 
 #contact_page .values .card:hover {
@@ -2926,26 +2940,29 @@ cursor: pointer;
 #contact_page .card h4 {
   font-weight: 700;
   margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
+
 /* ebds */
 
 
 /* service page css */
 
-#service_page .read-more , #about_page .read-more{ 
+#service_page .read-more,
+#about_page .read-more {
   display: none;
 }
 
- #service_page .service-item:hover h3 , #service_page .service-item:hover p  {
+#service_page .service-item:hover h3,
+#service_page .service-item:hover p {
   color: var(--accent-color) !important;
 }
 
-.services .service-item:hover{
+.services .service-item:hover {
   transform: scale(1.1);
-    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .btn-get-started {
@@ -2970,9 +2987,10 @@ cursor: pointer;
   }
 }
 
- .btn-get-started:hover i {
+.btn-get-started:hover i {
   transform: translateX(5px);
 }
+
 .btn-get-started i {
   margin-left: 5px;
   font-size: 18px;
@@ -2999,66 +3017,218 @@ cursor: pointer;
   justify-content: center;
 }
 
-#preloader div {
-  width: 13px;
-  height: 13px;
-  background-color: var(--accent-color);
-  border-radius: 50%;
+preloader div {
+
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
   position: absolute;
+  top: 50%;
   left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
 }
 
-#preloader div:nth-child(1) {
-  left: calc(50% + 8px);
-  animation: animate-preloader-1 0.6s infinite;
+.ss_sec .col {
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-#preloader div:nth-child(2) {
-  left: calc(50% + 8px);
-  animation: animate-preloader-2 0.6s infinite;
+.ss_sec .col:hover {
+  transform: scale(1.1) !important;
+
 }
 
-#preloader div:nth-child(3) {
-  left: calc(50% + 32px);
-  animation: animate-preloader-2 0.6s infinite;
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, #ed1c24);
+  width: 25px;
+  height: 10px;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 20px;
 }
 
-#preloader div:nth-child(4) {
-  left: calc(50% + 56px);
-  animation: animate-preloader-3 0.6s infinite;
+.php-email-form {
+  background-color: var(--accent-color) !important;
+  border-radius: 20px 20px 20px 20px;
 }
 
-@keyframes animate-preloader-1 {
+#services {
+  background-color: 
+color-mix(in srgb, var(--accent-color), transparent 95%);
+}
+
+/* whats app css */
+
+button.wh-ap-btn {
+  outline: none;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background-color: #2ecc71;
+  padding: 0;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition: opacity 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+button.wh-ap-btn::after {
+  content: "";
+  background-image: url("https://i.imgur.com/cAS6qqn.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+}
+
+button.wh-ap-btn:hover {
+  opacity: 1;
+  background-color: #20bf6b;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wh-api {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.wh-fixed {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* animacion pulse */
+
+.whatsapp-pulse {
+  width: 60px;
+  height: 60px;
+  right: 10px;
+  bottom: 50px;
+  background: #10b418;
+  position: fixed;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99;
+  display: inline-block;
+  line-height: 65px;
+  /* top: 0%; */
+}
+
+
+
+.whatsapp-pulse:before {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  bottom: -15px;
+  right: -15px;
+  background-color: #10b418;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  opacity: 0.6;
+  -webkit-animation: pulse 1s ease-out;
+  animation: pulse 1.8s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+
+  25% {
+    -webkit-transform: scale(0.3);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: scale(0.6);
+    opacity: 0.6;
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    opacity: 0.3;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
   0% {
     transform: scale(0);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+
+  75% {
+    transform: scale(0.9);
+    opacity: 0.3;
   }
 
   100% {
     transform: scale(1);
+    opacity: 0;
   }
 }
 
-@keyframes animate-preloader-3 {
-  0% {
-    transform: scale(1);
-  }
 
-  100% {
-    transform: scale(0);
-  }
-}
 
-@keyframes animate-preloader-2 {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(24px, 0);
-  }
-}
 /* ends service css */
+
+
+
+
+/* media query farhan */
+
+@media (max-width: 640px) {
+  section, .section {
+    padding: 40px 0;
+ 
+}
+.services .service-item {
+ 
+  padding: 40px 20px;
+ 
+}
+.section-title {
+ 
+  padding-bottom: 10px;
+ 
+}
+
+.cta_sec {
+  text-align: center;
+}
+}
+
+/* media ends */
 /*--------------------------------------------------------------
 # farhan css for shiled website   ends
 --------------------------------------------------------------*/

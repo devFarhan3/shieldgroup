@@ -203,13 +203,16 @@
 
 // preloader js
 
-   const preloader = document.querySelector('#preloader');
-   if (preloader) {
-     window.addEventListener('load', () => {
-       preloader.remove();
-     });
-   }
+  //  const preloader = document.querySelector('#preloader');
+  //  if (preloader) {
+  //    window.addEventListener('load', () => {
+  //      preloader.remove();
+  //    });
+  //  }
  
+  jQuery(window).on("load", function () {
+    jQuery("#preloader").fadeOut(500);
+});
 
 
 })();

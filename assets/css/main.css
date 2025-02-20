@@ -3208,6 +3208,12 @@ button.wh-ap-btn:hover {
 /* media query farhan */
 
 @media (max-width: 640px) {
+
+  .ss_text p {
+  
+    font-size: clamp(14px, 5vw, 15px);
+    
+}
   section, .section {
     padding: 40px 0;
  

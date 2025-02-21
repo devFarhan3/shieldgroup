@@ -983,7 +983,8 @@ section,
   line-height: 24px;
 }
 
-.about .content .btn-read-more , .more_service .btn-read-more  {
+.about .content .btn-read-more,
+.more_service .btn-read-more {
   color: var(--contrast-color);
   background: var(--accent-color);
   line-height: 0;
@@ -993,20 +994,23 @@ section,
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
 }
 
-.about .content .btn-read-more span , .more_service .btn-read-more  span{
+.about .content .btn-read-more span,
+.more_service .btn-read-more span {
   font-family: var(--default-font);
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
-.about .content .btn-read-more i , .more_service .btn-read-more  i {
+.about .content .btn-read-more i,
+.more_service .btn-read-more i {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.about .content .btn-read-more:hover i , .more_service .btn-read-more:hover i  {
+.about .content .btn-read-more:hover i,
+.more_service .btn-read-more:hover i {
   transform: translateX(5px);
 }
 
@@ -1799,8 +1803,8 @@ section,
 #Service .swiper-pagination,
 #Hi_imp .swiper-pagination,
 #Waterproofing_Services .swiper-pagination,
-#AC_Repair_Services .swiper-pagination , 
-#Annual_Maintenance .swiper-pagination , 
+#AC_Repair_Services .swiper-pagination,
+#Annual_Maintenance .swiper-pagination,
 #AC_Deep_Cleaning .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -1897,8 +1901,9 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
   padding: 30px;
+  background-color: var(--surface-color);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact .info-item i {
@@ -1949,7 +1954,7 @@ section,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color:var(--default-color);
+  color: var(--default-color);
 }
 
 .contact .php-email-form button[type=submit] {
@@ -3043,9 +3048,9 @@ preloader div {
   background: var(--swiper-pagination-color, #ed1c24);
   width: 25px;
   height: 10px;
-    display: inline-block;
-    margin: 0 5px;
-    border-radius: 20px;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 20px;
 }
 
 .php-email-form {
@@ -3054,8 +3059,8 @@ preloader div {
 }
 
 #services {
-  background-color: 
-color-mix(in srgb, var(--accent-color), transparent 95%);
+  background-color:
+    color-mix(in srgb, var(--accent-color), transparent 95%);
 }
 
 /* whats app css */
@@ -3199,6 +3204,12 @@ button.wh-ap-btn:hover {
 }
 
 
+.read-more {
+  display: none !important;
+}
+/* #contact_page .contact {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+} */
 
 /* ends service css */
 
@@ -3210,28 +3221,32 @@ button.wh-ap-btn:hover {
 @media (max-width: 640px) {
 
   .ss_text p {
-  
-    font-size: clamp(14px, 5vw, 15px);
-    
-}
-  section, .section {
-    padding: 40px 0;
- 
-}
-.services .service-item {
- 
-  padding: 40px 20px;
- 
-}
-.section-title {
- 
-  padding-bottom: 10px;
- 
-}
 
-.cta_sec {
-  text-align: center;
-}
+    font-size: clamp(14px, 5vw, 15px);
+
+  }
+
+  section,
+  .section {
+    padding: 40px 0;
+
+  }
+
+  .services .service-item {
+
+    padding: 40px 20px;
+
+  }
+
+  .section-title {
+
+    padding-bottom: 10px;
+
+  }
+
+  .cta_sec {
+    text-align: center;
+  }
 }
 
 /* media ends */

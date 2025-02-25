@@ -883,8 +883,8 @@
 
     <!-- ss sections -->
 
-  
-    <section id="recent-posts" class="recent-posts section ">
+
+    <section id="recent-posts" class="recent-posts section d-none">
 
       <div class="container section-title " data-aos="fade-up">
         <p class="mb-0">Take a look at our services</p>
@@ -945,8 +945,8 @@
             <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Roof-Waterproofing.webp"
-                  class="img-fluid" alt="">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Roof-Waterproofing.webp" class="img-fluid"
+                  alt="">
 
               </div>
 
@@ -968,8 +968,8 @@
             <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="400">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/17-65d06c7e8ff31.webp"
-                  class="img-fluid" alt="">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/17-65d06c7e8ff31.webp" class="img-fluid"
+                  alt="">
 
               </div>
 
@@ -992,8 +992,8 @@
             <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="500">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp"
-                  class="img-fluid" alt="">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
+                  alt="">
 
               </div>
 
@@ -1015,8 +1015,8 @@
             <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="600">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Swimming-Pool.webp"
-                  class="img-fluid" alt="">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Swimming-Pool.webp" class="img-fluid"
+                  alt="">
 
               </div>
 
@@ -1034,8 +1034,10 @@
           </div>
           <!-- End post item -->
 
-          <div class="more_service mt-lg-5 mt-sm-3 mt-3 d-flex align-items-center justify-content-center " data-aos="fade-up" data-aos-delay="700">
-            <a href="service.html" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+          <div class="more_service mt-lg-5 mt-sm-3 mt-3 d-flex align-items-center justify-content-center "
+            data-aos="fade-up" data-aos-delay="700">
+            <a href="service.html"
+              class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
               <span>View More Services</span>
               <i class="bi bi-arrow-right"></i>
             </a>
@@ -1051,7 +1053,7 @@
     <!-- ends -->
 
     <!-- Home Improvement Services sec -->
-    <section id="Hi_imp" class="values Home_improvement d-none">
+    <section id="Hi_imp" class="values Home_improvement">
       <!-- Section Title -->
       <div class="container section-title" data-aos="zoom-out" data-aos-delay="100">
         <h2>Home Improvement Services</h2>
@@ -1063,9 +1065,7 @@
             {
               "loop": true,
               "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
+              "autoplay":false,
               "slidesPerView": "auto",
               "pagination": {
                 "el": ".swiper-pagination",
@@ -1082,7 +1082,7 @@
                   "spaceBetween": 10
                 },
                 "640": {
-                  "slidesPerView": 2,
+                  "slidesPerView": 3,
                   "spaceBetween": 10
                 },
                 "992": {
@@ -1094,7 +1094,7 @@
           </script>
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide">
-              <div class="card">
+              <div class="card" onclick="window.open('renovation_service.html');">
                 <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
                   class="img-fluid" alt="">
                 <h3>Renovation Service </h3>
@@ -1102,7 +1102,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card">
+              <div class="card" onclick="window.open('renovation_service.html');">
                 <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
                   alt="">
                 <h3>Water Tank Cleaning </h3>
@@ -1110,7 +1110,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card">
+              <div class="card" onclick="window.open('renovation_service.html');">
                 <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
                   alt="">
                 <h3>Painting Service </h3>
@@ -1119,7 +1119,7 @@
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
+              <div class="card" onclick="window.open('renovation_service.html');">
                 <img src="https://homecomfort.me/wp-content/uploads/2024/02/Plumbing-Services.webp" class="img-fluid"
                   alt="">
                 <h3>Plumbing Service </h3>
@@ -1127,56 +1127,13 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card">
+              <div class="card" onclick="window.open('renovation_service.html');">
                 <img src="https://homecomfort.me/wp-content/uploads/2024/02/Swimming-Pool.webp" class="img-fluid"
                   alt="">
                 <h3>Swimming Pool Maintenance </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
-
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
-                  class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
-                  alt="">
-                <h3>Water Tank Cleaning </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Painting Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Plumbing-Services.webp" class="img-fluid"
-                  alt="">
-                <h3>Plumbing Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Swimming-Pool.webp" class="img-fluid"
-                  alt="">
-                <h3>Swimming Pool Maintenance </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-
           </div>
           <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
         </div>
@@ -1186,21 +1143,19 @@
 
 
     <!-- Waterproofing Services  sec -->
-    <section id="Waterproofing_Services" class="values Waterproofing_sec d-none">
+    <section id="Waterproofing_Services" class="values Waterproofing_sec ">
       <!-- Section Title -->
       <div class="container section-title" data-aos="zoom-out" data-aos-delay="100">
         <h2>Waterproofing Services</h2>
         <p>Secure your property from water damage with our reliable waterproofing services</p>
       </div><!-- End Section Title -->
       <div class="container overflow-hidden" data-aos="zoom-out" data-aos-delay="100">
-        <div class="swiper Waterproofing_Services init-swiper overflow-visible">
+        <div class="swiper Waterproofing_Services init-swiper d-none">
           <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
+                "autoplay": false,
                 "slidesPerView": "auto",
                 "pagination": {
                   "el": ".swiper-pagination",
@@ -1305,15 +1260,111 @@
             </div>
 
           </div>
-          <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
+          <div class="swiper-pagination "></div>
+
         </div>
+
+        <!-- new swiper section  -->
+        <div class="swiper-container" id="new_slider">
+
+          <!-- swiper slides -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Roof-Waterproofing.webp" class="img-fluid"
+                  alt="">
+                <h3>Roof Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Balcony-Waterproofing.webp"
+                  class="img-fluid" alt="">
+                <h3>Balcony Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Terrace-Waterproofing.webp"
+                  class="img-fluid" alt="">
+                <h3>Terrace Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Pantry-Area-Waterproofing.webp"
+                  class="img-fluid" alt="">
+                <h3>Pantry Area Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Wet-AreaWaterproofing.webp"
+                  class="img-fluid" alt="">
+                <h3>Wet Area Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Bathroom-Waterproofing.webp"
+                  class="img-fluid" alt="">
+                <h3>Bathroom Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Metal-Roof-Waterproofing.webp"
+                  class="img-fluid" alt="">
+                <h3>Metal Roof Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/KitchenWaterproofing.webp" class="img-fluid"
+                  alt="">
+                <h3>Kitchen Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Commercial-Waterproofing.webp"
+                  class="img-fluid" alt="">
+                <h3>Commercial Waterproofing </h3>
+                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+              </div>
+            </div>
+
+          </div>
+          <!-- !swiper slides -->
+
+          <!-- next / prev arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- !next / prev arrows -->
+
+          <!-- pagination dots -->
+          <div class="swiper-pagination"></div>
+          <!-- !pagination dots -->
+        </div>
+
+        <!-- ends -->
       </div>
     </section>
     <!-- Waterproofing  Services Section -->
 
 
     <!-- Annual Maintenance Contract-->
-    <section id="Annual_Maintenance" class="values Waterproofing_sec d-none">
+    <section id="Annual_Maintenance" class="values Waterproofing_sec ">
       <!-- Section Title -->
       <div class="container section-title" data-aos="zoom-out" data-aos-delay="100">
         <h2>Annual Maintenance Contract</h2>
@@ -1321,68 +1372,70 @@
         </p>
       </div><!-- End Section Title -->
       <div class="container overflow-hidden" data-aos="zoom-out" data-aos-delay="100">
-        <div class="swiper init-swiper overflow-visible">
-          <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": false,
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 10
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+            <div class="swiper init-swiper overflow-visible">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": false,
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
                   },
-                  "480": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 10
-                  },
-                  "640": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 10
-                  },
-                  "992": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 10
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 10
+                    },
+                    "480": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 10
+                    },
+                    "640": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 10
+                    },
+                    "992": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 10
+                    }
                   }
                 }
-              }
-            </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
-                  class="img-fluid" alt="">
-                <h3> Silver Package </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
-                  alt="">
-                <h3>Gold Package </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Platinum Package </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/39-65d598cdf1e1b.webp" class="img-fluid"
+                      alt="">
+                    <h3> Silver <br> Package </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/38-65d598cd33648.webp" class="img-fluid"
+                      alt="">
+                    <h3>Gold <br> Package </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/Annual-Maintenance-Contract.webp"
+                      class="img-fluid" alt="">
+                    <h3>Platinum Package </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
 
-
-
+              </div>
+              <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
+            </div>
           </div>
-          <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
         </div>
       </div>
     </section>
@@ -1390,7 +1443,7 @@
 
 
     <!-- AC Deep Cleaning & Sanitization Services Services sec -->
-    <section id="AC_Deep_Cleaning" class="values Home_improvement d-none">
+    <section id="AC_Deep_Cleaning" class="values Home_improvement ">
       <!-- Section Title -->
       <div class="container section-title " data-aos="zoom-out" data-aos-delay="100">
         <h2>AC Deep Cleaning & Sanitization Services</h2>
@@ -1422,7 +1475,7 @@
                   "spaceBetween": 10
                 },
                 "640": {
-                  "slidesPerView": 2,
+                  "slidesPerView": 3,
                   "spaceBetween": 10
                 },
                 "992": {
@@ -1435,87 +1488,46 @@
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/AC-Duct-before-and-after.webp"
                   class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
+                <h3>Duct Cleaning <br> & Sanitization </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
-                  alt="">
-                <h3>Water Tank Cleaning </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Painting Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Plumbing-Services.webp" class="img-fluid"
-                  alt="">
-                <h3>Plumbing Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Swimming-Pool.webp" class="img-fluid"
-                  alt="">
-                <h3>Swimming Pool Maintenance </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
+                <img src="https://homecomfort.me/wp-content/uploads/2024/03/ac-coils-before-after.webp"
                   class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
+                <h3>Coil Cleaning <br> & Sanitization </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
-                  alt="">
-                <h3>Water Tank Cleaning </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Painting Service </h3>
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/AC-Blowers-Before-and-After.webp"
+                  class="img-fluid" alt="">
+                <h3>Blowers <br> Cleaning </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Plumbing-Services.webp" class="img-fluid"
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/14-65d06c7d529a1.webp" class="img-fluid"
                   alt="">
-                <h3>Plumbing Service </h3>
+                <h3>Out Door Unit <br> Cleaning </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Swimming-Pool.webp" class="img-fluid"
-                  alt="">
-                <h3>Swimming Pool Maintenance </h3>
+                <img src="https://homecomfort.me/wp-content/uploads/2024/03/ac-grills-before-after-65f810999040f.webp"
+                  class="img-fluid" alt="">
+                <h3>Grills & Filters <br> Cleaning </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
+
 
           </div>
           <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
@@ -1526,7 +1538,7 @@
 
 
     <!-- AC Repair Services   sec -->
-    <section id="AC_Repair_Services" class="values Waterproofing_sec d-none">
+    <section id="AC_Repair_Services" class="values Waterproofing_sec ">
       <!-- Section Title -->
       <div class="container section-title" data-aos="zoom-out" data-aos-delay="100">
         <h2>AC Repair Services </h2>
@@ -1561,7 +1573,7 @@
                   },
                   "992": {
                     "slidesPerView": 5,
-                    "spaceBetween": 10
+                    "spaceBetween": 12
                   }
                 }
               }
@@ -1569,88 +1581,50 @@
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
-                  class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/17-65d06c7e8ff31.webp" class="img-fluid"
+                  alt="">
+                <h3>AC <br> Installation </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/ac-thermostate-.webp" class="img-fluid"
                   alt="">
-                <h3>Water Tank Cleaning </h3>
+                <h3>AC Thermostat <br> Replacement </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/15-65d06c7da9ac6.webp" class="img-fluid"
                   alt="">
-                <h3>Painting Service </h3>
+                <h3>AC Compressor <br> Replacement </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Plumbing-Services.webp" class="img-fluid"
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/16-65d06c7e5a90b.webp" class="img-fluid"
                   alt="">
-                <h3>Plumbing Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Swimming-Pool.webp" class="img-fluid"
-                  alt="">
-                <h3>Swimming Pool Maintenance </h3>
+                <h3>AC Fan <br> Replacement</h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
-                  class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
+                <img src="https://homecomfort.me/wp-content/uploads/2024/02/13-65d06c7ca049e.webp" class="img-fluid"
                   alt="">
-                <h3>Water Tank Cleaning </h3>
+                <h3>AC Leakage <br> Fix </h3>
                 <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Painting Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Plumbing-Services.webp" class="img-fluid"
-                  alt="">
-                <h3>Plumbing Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Swimming-Pool.webp" class="img-fluid"
-                  alt="">
-                <h3>Swimming Pool Maintenance </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
+
+
 
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
         </div>
       </div>
     </section>
@@ -1658,7 +1632,7 @@
 
 
     <!-- Mold Removal Services sec-->
-    <section id="Mold_Removal_Services" class="values Waterproofing_sec d-none">
+    <section id="Mold_Removal_Services" class="values Waterproofing_sec">
       <!-- Section Title -->
       <div class="container section-title" data-aos="zoom-out" data-aos-delay="100">
         <h2>Mold Removal Services </h2>
@@ -1666,94 +1640,84 @@
         </p>
       </div><!-- End Section Title -->
       <div class="container overflow-hidden" data-aos="zoom-out" data-aos-delay="100">
-        <div class="swiper init-swiper overflow-visible">
-          <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  },
-                  "breakpoints": {
-                    "320": {
-                      "slidesPerView": 2,
-                      "spaceBetween": 10
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="swiper init-swiper overflow-visible">
+              <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
                     },
-                    "480": {
-                      "slidesPerView": 2,
-                      "spaceBetween": 10
+                    "slidesPerView": "auto",
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
                     },
-                    "640": {
-                      "slidesPerView": 2,
-                      "spaceBetween": 10
-                    },
-                    "992": {
-                      "slidesPerView": 4,
-                      "spaceBetween": 10
+                    "breakpoints": {
+                      "320": {
+                        "slidesPerView": 2,
+                        "spaceBetween": 10
+                      },
+                      "480": {
+                        "slidesPerView": 2,
+                        "spaceBetween": 10
+                      },
+                      "640": {
+                        "slidesPerView": 2,
+                        "spaceBetween": 10
+                      },
+                      "992": {
+                        "slidesPerView": 4,
+                        "spaceBetween": 10
+                      }
                     }
                   }
-                }
-              </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
-                  class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
-                  alt="">
-                <h3>Water Tank Cleaning </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Painting Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
+                </script>
+              <div class="swiper-wrapper align-items-center">
 
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
-                  class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
-                  alt="">
-                <h3>Water Tank Cleaning </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Painting Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/20-65d30c74f3215.webp" class="img-fluid"
+                      alt="">
+                    <h3>AC Mold <br> Removal </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/21-65d30c7501bcc.webp" class="img-fluid"
+                      alt="">
+                    <h3>Wall Mold <br> Removal</h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/23-65d30c75e843c.webp" class="img-fluid"
+                      alt="">
+                    <h3>Bathroom Mold <br> Removal </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/22-65d30c75d703a.webp" class="img-fluid"
+                      alt="">
+                    <h3>Ceiling Mold <br> Removal </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
 
 
+
+              </div>
+              <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
+            </div>
           </div>
-          <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
         </div>
       </div>
     </section>
@@ -1761,110 +1725,85 @@
 
 
     <!-- Deep Cleaning Services-->
-    <section id="Deep_Cleaning" class="values Waterproofing_sec d-none">
+    <section id="Deep_Cleaning" class="values Waterproofing_sec ">
       <!-- Section Title -->
       <div class="container section-title" data-aos="zoom-out" data-aos-delay="100">
         <h2>Deep Cleaning Services </h2>
         <p>Refresh your space with our comprehensive deep cleaning services, ensuring a cleaner environment.
-
-
         </p>
       </div><!-- End Section Title -->
+
       <div class="container overflow-hidden" data-aos="zoom-out" data-aos-delay="100">
-        <div class="swiper init-swiper overflow-visible">
-          <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 10
-                  },
-                  "480": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 10
-                  },
-                  "640": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 10
-                  },
-                  "992": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 10
-                  }
-                }
-              }
-            </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
-                  class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
-                  alt="">
-                <h3>Water Tank Cleaning </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Painting Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/Home-Comfort-Renovation-Services.webp"
-                  class="img-fluid" alt="">
-                <h3>Renovation Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/35-65d440bc2b2b6.webp" class="img-fluid"
-                  alt="">
-                <h3>Water Tank Cleaning </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="https://homecomfort.me/wp-content/uploads/2024/02/34-65d440bcc5166.webp" class="img-fluid"
-                  alt="">
-                <h3>Painting Service </h3>
-                <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+            <div class="swiper init-swiper overflow-visible">
+              <script type="application/json" class="swiper-config">
+                 {
+                   "loop": true,
+                   "speed": 600,
+                   "autoplay": false,
+                   "slidesPerView": "auto",
+                   "pagination": {
+                     "el": ".swiper-pagination",
+                     "type": "bullets",
+                     "clickable": true
+                   },
+                   "breakpoints": {
+                     "320": {
+                       "slidesPerView": 2,
+                       "spaceBetween": 10
+                     },
+                     "480": {
+                       "slidesPerView": 2,
+                       "spaceBetween": 10
+                     },
+                     "640": {
+                       "slidesPerView": 2,
+                       "spaceBetween": 10
+                     },
+                     "992": {
+                       "slidesPerView": 3,
+                       "spaceBetween": 10
+                     }
+                   }
+                 }
+               </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/Move-in-Cleaning.webp" class="img-fluid"
+                      alt="">
+                    <h3> Movein / out <br> Cleaning </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/cleaning-65d313380a003.webp"
+                      class="img-fluid" alt="">
+                    <h3>Window <br> Cleaning </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://homecomfort.me/wp-content/uploads/2024/02/Kitchen-Cleaning.webp" class="img-fluid"
+                      alt="">
+                    <h3>General <br> Cleaning </h3>
+                    <!-- <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p> -->
+                  </div>
+                </div>
 
 
+
+              </div>
+              <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
+            </div>
           </div>
-          <div class="swiper-pagination d-lg-none d-sm-block d-block"></div>
         </div>
       </div>
     </section>
     <!-- Deep Cleaning Services  Section -->
-
-
 
 
     <section id="about" class="about section">
@@ -1949,17 +1888,43 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img
-                src="https://homecomfort.me/wp-content/uploads/2023/09/179114_askhon_btzbcyca_23uh8dgpi-300x169-1-150x150.webp"
-                class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="https://homecomfort.me/wp-content/uploads/2023/09/logo-grey-new.webp"
-                class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide">
+              <img src="https://homecomfort.me/wp-content/uploads/2023/09/logo-300x190-1.webp" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://homecomfort.me/wp-content/uploads/2024/03/zNf5uvaXfT3OkZCfNwyYv40dc1k-300x300.webp"
+                class="img-fluid" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="https://homecomfort.me/wp-content/uploads/2023/09/Nakheel-Logo-e1685616447683-300x300-1-150x150.webp"
+                class="img-fluid" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://homecomfort.me/wp-content/uploads/2023/09/6-150x150-1.webp" class="img-fluid" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://homecomfort.me/wp-content/uploads/2023/09/logo-1-1.webp" class="img-fluid" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://homecomfort.me/wp-content/uploads/2023/09/PNG1-300x102-1.webp" class="img-fluid" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://homecomfort.me/wp-content/uploads/2023/09/picture-150x150-1.webp" class="img-fluid"
+                alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://homecomfort.me/wp-content/uploads/2023/09/logo-small-300x114-1.webp" class="img-fluid"
+                alt="">
+            </div>
+
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -2155,10 +2120,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Conatct</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service.html">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Conatct</a></li>
           </ul>
         </div>
 
@@ -2322,6 +2287,31 @@
   </script>
   <!-- ends -->
 
+
+  <script>
+    var Swipes = new Swiper('.swiper-container', {
+      loop: true,
+      spaceBetween: 13,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      breakpoints: {
+        960: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        360: {
+          slidesPerView: 2,
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>

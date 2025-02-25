@@ -1020,12 +1020,14 @@ section,
 .values .card {
   background-color: var(--surface-color);
   color: var(--default-color);
-  padding: 10px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 10px;
+  /* box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
   text-align: center;
   transition: 0.3s;
   height: 100%;
   border: 0;
+  border-radius: 10px;
   margin: 5px;
 }
 
@@ -1034,6 +1036,7 @@ section,
   margin-bottom: 10px;
   transition: 0.5s;
   transform: scale(1.1);
+  border-radius: 10px 10px 0 0;
 }
 
 .values .card h3 {
@@ -1044,15 +1047,17 @@ section,
   max-width: 115px;
   margin: 0 auto;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .values .card:hover {
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1); */
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 }
 
-.values .card:hover img {
+/* .values .card:hover img {
   transform: scale(1);
-}
+} */
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1805,7 +1810,7 @@ section,
 #Waterproofing_Services .swiper-pagination,
 #AC_Repair_Services .swiper-pagination,
 #Annual_Maintenance .swiper-pagination,
-#AC_Deep_Cleaning .swiper-pagination {
+#AC_Deep_Cleaning .swiper-pagination  , #Mold_Removal_Services .swiper-pagination , #Deep_Cleaning .swiper-pagination  {
   margin-top: 20px;
   position: relative;
 }
@@ -3218,6 +3223,63 @@ button.wh-ap-btn:hover {
 /* ends service css */
 
 
+/* new swiper css */
+
+
+#new_slider .swiper-pagination-bullet {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+#new_slider .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+:root {
+  --swiper-navigation-size: 20px;
+}
+:root {
+  --swiper-theme-color: var(--heading-color);
+}
+
+#new_slider .swiper-button-next, #new_slider .swiper-button-prev{
+  border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .8);
+    color: #8c8c8c;
+    width: 2.66em;
+    height: 2.66em;
+}
+
+#new_slider .swiper-button-next, #new_slider .swiper-button-prev {
+
+  top: var(--swiper-navigation-top-offset, 35%);
+}
+
+
+/* service details page css */
+#service_details .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2024/08/hero-section.png);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+}
+
+#values .card  h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ens */
+
+/* ends */
 
 
 /* media query farhan */

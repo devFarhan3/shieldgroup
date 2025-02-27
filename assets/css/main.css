@@ -1029,6 +1029,7 @@ section,
   border: 0;
   border-radius: 10px;
   margin: 5px;
+  /* max-height: 250px; */
 }
 
 .values .card img {
@@ -2902,6 +2903,7 @@ form .error {
 
 .swiper-slide .card {
   cursor: pointer;
+  display: block;
 }
 
 .Home_improvement {
@@ -3269,8 +3271,7 @@ button.wh-ap-btn:hover {
   background-size: cover;
   background-position: center center;
   min-height: 500px;
-  display: flex
-;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -3302,6 +3303,87 @@ button.wh-ap-btn:hover {
   border-width: 1px;
 }
 
+
+
+#water_tank .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(../img/tank-cleaning-bg.webp);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#paint_service .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2024/03/painting-1-65f165f1e21bd-1024x576.webp);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#plumbing_service .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2024/05/plumbing-services-1.webp);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pool_service .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2024/03/swimming-pool-65e96216dbf89-1024x576.webp);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#waterproofing_services .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2023/12/roof-waterproofing.webp);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#annual_maintainance_silver .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2023/12/roof-waterproofing.webp);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#deep_cleaning_services .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2023/06/Before.webp);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pest_service .page-title .heading {
+  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2024/03/pest-control-1-65f297d2ed6b5.webp);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ends */
 
 

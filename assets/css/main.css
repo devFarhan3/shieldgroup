@@ -3231,7 +3231,7 @@ button.wh-ap-btn:hover {
 /* new swiper css */
 
 
-#new_slider .swiper-pagination-bullet {
+#new_slider .swiper-pagination-bullet , #slider_home .swiper-pagination-bullet {
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -3239,7 +3239,7 @@ button.wh-ap-btn:hover {
   height: 12px;
   opacity: 1;
 }
-#new_slider .swiper-pagination-bullet-active {
+#new_slider .swiper-pagination-bullet-active  , #slider_home .swiper-pagination-bullet-active {
   background-color: #fff;
 }
 
@@ -3250,7 +3250,7 @@ button.wh-ap-btn:hover {
   --swiper-theme-color: var(--heading-color);
 }
 
-#new_slider .swiper-button-next, #new_slider .swiper-button-prev{
+#new_slider .swiper-button-next, #new_slider .swiper-button-prev , #slider_home .swiper-button-next, #slider_home .swiper-button-prev {
   border: 1px solid rgba(255, 255, 255, .8);
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .8);
@@ -3259,7 +3259,7 @@ button.wh-ap-btn:hover {
     height: 2.66em;
 }
 
-#new_slider .swiper-button-next, #new_slider .swiper-button-prev {
+#new_slider .swiper-button-next, #new_slider .swiper-button-prev  , #slider_home .swiper-button-next, #slider_home .swiper-button-prev {
 
   top: var(--swiper-navigation-top-offset, 35%);
 }

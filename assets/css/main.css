@@ -853,9 +853,9 @@ section,
   /* padding: 80px 0 60px 0; */
   display: flex;
   align-items: center;
-  /* background: url(../img/banner-bg.webp) center center no-repeat; */
+  /* background: url(../img/hero-banner.jpg) center center no-repeat; */
   background-size: cover;
-  background: linear-gradient(180deg, rgba(29, 37, 67, 0.5) 0%, rgba(29, 37, 67, 0.5) 100%), url(../img/hero-banner.jpg) center center no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.1) 100%), url(../img/hero-banner.jpg) center center no-repeat;
 }
 
 
@@ -868,10 +868,11 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #081F28;
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
+  max-width: 550px;
 }
 
 .hero .btn-get-started {
@@ -1811,7 +1812,9 @@ section,
 #Waterproofing_Services .swiper-pagination,
 #AC_Repair_Services .swiper-pagination,
 #Annual_Maintenance .swiper-pagination,
-#AC_Deep_Cleaning .swiper-pagination  , #Mold_Removal_Services .swiper-pagination , #Deep_Cleaning .swiper-pagination  {
+#AC_Deep_Cleaning .swiper-pagination,
+#Mold_Removal_Services .swiper-pagination,
+#Deep_Cleaning .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
@@ -1910,6 +1913,7 @@ section,
   padding: 30px;
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  height:100%;
 }
 
 .contact .info-item i {
@@ -2842,11 +2846,12 @@ form .error {
 }
 
 .hero h1 {
-  font-size: clamp(25px, 5vw, 45px);
-  line-height: clamp(35px, 5vw, 65px);
+  font-size: clamp(25px, 5vw, 35px);
+  line-height: clamp(35px, 5vw, 45px);
   font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: 0 0 7px #000000;
+  text-transform: capitalize;
+  color: #081F28;
+  /* text-shadow: 0 0 7px #000000; */
 }
 
 .pt_20 {
@@ -2893,6 +2898,7 @@ form .error {
   margin: 0 auto;
   padding-top: 10px;
   font-weight: 600;
+  text-shadow: 1px 1px 7px #000000;
 
 
 }
@@ -3030,16 +3036,66 @@ svg:hover {
   justify-content: center;
 }
 
-preloader div {
-
+#preloader div {
+  width: 13px;
+  height: 13px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
   position: absolute;
-  top: 50%;
   left: 50%;
-  margin-left: -50px;
-  width: 100px;
-  height: 100px;
 }
+
+#preloader div:nth-child(1) {
+  left: calc(50% + 8px);
+  animation: animate-preloader-1 0.6s infinite;
+}
+
+#preloader div:nth-child(2) {
+  left: calc(50% + 8px);
+  animation: animate-preloader-2 0.6s infinite;
+}
+
+#preloader div:nth-child(3) {
+  left: calc(50% + 32px);
+  animation: animate-preloader-2 0.6s infinite;
+}
+
+#preloader div:nth-child(4) {
+  left: calc(50% + 56px);
+  animation: animate-preloader-3 0.6s infinite;
+}
+
+@keyframes animate-preloader-1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate-preloader-3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes animate-preloader-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
 
 .ss_sec .col {
   transition: 0.3s;
@@ -3215,11 +3271,13 @@ button.wh-ap-btn:hover {
 .read-more {
   display: none !important;
 }
+
 /* #contact_page .contact {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 } */
 
-.post-item  , .clients_img{
+.post-item,
+.clients_img {
   cursor: pointer;
 }
 
@@ -3231,7 +3289,8 @@ button.wh-ap-btn:hover {
 /* new swiper css */
 
 
-#new_slider .swiper-pagination-bullet , #slider_home .swiper-pagination-bullet {
+#new_slider .swiper-pagination-bullet,
+#slider_home .swiper-pagination-bullet {
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -3239,27 +3298,36 @@ button.wh-ap-btn:hover {
   height: 12px;
   opacity: 1;
 }
-#new_slider .swiper-pagination-bullet-active  , #slider_home .swiper-pagination-bullet-active {
+
+#new_slider .swiper-pagination-bullet-active,
+#slider_home .swiper-pagination-bullet-active {
   background-color: #fff;
 }
 
 :root {
   --swiper-navigation-size: 20px;
 }
+
 :root {
   --swiper-theme-color: var(--heading-color);
 }
 
-#new_slider .swiper-button-next, #new_slider .swiper-button-prev , #slider_home .swiper-button-next, #slider_home .swiper-button-prev {
+#new_slider .swiper-button-next,
+#new_slider .swiper-button-prev,
+#slider_home .swiper-button-next,
+#slider_home .swiper-button-prev {
   border: 1px solid rgba(255, 255, 255, .8);
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, .8);
-    color: #8c8c8c;
-    width: 2.66em;
-    height: 2.66em;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .8);
+  color: #8c8c8c;
+  width: 2.66em;
+  height: 2.66em;
 }
 
-#new_slider .swiper-button-next, #new_slider .swiper-button-prev  , #slider_home .swiper-button-next, #slider_home .swiper-button-prev {
+#new_slider .swiper-button-next,
+#new_slider .swiper-button-prev,
+#slider_home .swiper-button-next,
+#slider_home .swiper-button-prev {
 
   top: var(--swiper-navigation-top-offset, 35%);
 }
@@ -3267,7 +3335,7 @@ button.wh-ap-btn:hover {
 
 /* service details page css */
 #service_details .page-title .heading {
-  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2024/08/hero-section.png);
+  background: linear-gradient(180deg, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 50%) 100%), url(../img/home-renovation.jpg);
   background-size: cover;
   background-position: center center;
   min-height: 500px;
@@ -3276,13 +3344,13 @@ button.wh-ap-btn:hover {
   align-items: center;
 }
 
-#values .card  h4 {
+#values .card h4 {
   font-size: 20px;
   font-weight: 700;
 }
 
 
-.clients_img{
+.clients_img {
   border-style: solid;
   border-width: 3px;
   border-color: #f5f5f5;
@@ -3290,14 +3358,14 @@ button.wh-ap-btn:hover {
   padding: 10px;
 }
 
-.clients_img img{
+.clients_img img {
   width: 100%;
-    max-width: 100%;
-    height: 107px;
-    transition: all .3s ease-in-out;
+  max-width: 100%;
+  height: 107px;
+  transition: all .3s ease-in-out;
 }
 
-.clients_img img:hover{
+.clients_img img:hover {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, .16);
   transition: all .3s ease-in-out;
   border-width: 1px;
@@ -3336,7 +3404,7 @@ button.wh-ap-btn:hover {
 }
 
 #pool_service .page-title .heading {
-  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2024/03/swimming-pool-65e96216dbf89-1024x576.webp);
+  background: linear-gradient(180deg, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 50%) 100%), url(../img/pool-maintenance.jpg);
   background-size: cover;
   background-position: center center;
   min-height: 500px;
@@ -3346,7 +3414,7 @@ button.wh-ap-btn:hover {
 }
 
 #waterproofing_services .page-title .heading {
-  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2023/12/roof-waterproofing.webp);
+  background: linear-gradient(180deg, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2023/12/roof-waterproofing.webp);
   background-size: cover;
   background-position: center center;
   min-height: 500px;
@@ -3356,7 +3424,7 @@ button.wh-ap-btn:hover {
 }
 
 #annual_maintainance_silver .page-title .heading {
-  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2023/12/roof-waterproofing.webp);
+  background: linear-gradient(180deg, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2023/12/roof-waterproofing.webp);
   background-size: cover;
   background-position: center center;
   min-height: 500px;
@@ -3366,7 +3434,7 @@ button.wh-ap-btn:hover {
 }
 
 #deep_cleaning_services .page-title .heading {
-  background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2023/06/Before.webp);
+  background: linear-gradient(180deg, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 50%) 100%), url(../img/Deep-cleaning.jpg);
   background-size: cover;
   background-position: center center;
   min-height: 500px;
@@ -3374,6 +3442,18 @@ button.wh-ap-btn:hover {
   justify-content: center;
   align-items: center;
 }
+
+
+#ac_services .page-title .heading {
+  background: linear-gradient(180deg, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 50%) 100%), url(../img/Ac-repair-service.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 #pest_service .page-title .heading {
   background: linear-gradient(180deg, rgb(179 183 201 / 70%) 0%, rgb(41 43 49 / 50%) 100%), url(https://homecomfort.me/wp-content/uploads/2024/03/pest-control-1-65f297d2ed6b5.webp);
@@ -3384,6 +3464,7 @@ button.wh-ap-btn:hover {
   justify-content: center;
   align-items: center;
 }
+
 /* ends */
 
 

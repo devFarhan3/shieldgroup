@@ -2899,7 +2899,9 @@ form .error {
   margin: 0 auto;
   padding-top: 10px;
   font-weight: 600;
-  text-shadow: 1px 1px 7px #000000;
+  /* text-shadow: 1px 1px 7px #000000; */
+  /* text-shadow: 1px 1px 1px #081F28; */
+  ext-shadow: 1px 1px 2px #b3acac;
 
 
 }
@@ -3481,8 +3483,8 @@ button.wh-ap-btn:hover {
   }
 
   .ss_text p {
-
-    font-size: clamp(14px, 5vw, 15px);
+    color: #081F28 !important;
+    font-size: clamp(14px,3vw,15px);
 
   }
 

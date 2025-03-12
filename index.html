@@ -2588,7 +2588,7 @@
         },
 
         submitHandler: function (form) {
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbyvTWI_z48pfcY8CFQvKz-8I7zWkzTZ8tPXF4CLCDhThcJXLfoGVSIloGCnmnLTbxuR/exec'
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbzKNEVOL0wUKA3DinOQsHe77PVlMTW8WmpDxriX2nb3pgjX6qGayh9lsy9RmcTODUGVkg/exec'
 
           fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response =>
@@ -2597,7 +2597,7 @@
                 icon: 'success',
                 title: 'Thanks,Our Sales Representative Will Contact You Shortly',
                 showConfirmButton: false,
-                timer: 500
+                timer: 2500
               }).then(function () {
                 setTimeout(function () { location.reload(true); }, 1000);
               })
